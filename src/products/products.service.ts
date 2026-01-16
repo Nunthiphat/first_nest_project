@@ -30,6 +30,6 @@ export class ProductsService {
 
   remove(id: string) {
     const result = this.productModel.findByIdAndDelete(id).exec();
-    return result[id], " has been deleted successfully.";
+    return `${id} has been deleted successfully.`;
   }
 }
